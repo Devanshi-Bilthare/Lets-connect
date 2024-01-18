@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script:wght@400;500;600;700&family=Englebert&family=Redressed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Englebert', cursive;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: #134355;
+    color: #FAE6E8;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+.img1{
+    width: 150px;
+    animation: 2s frame linear infinite;
+}
+
+@keyframes frame {
+    0%{
+        transform: rotate(-20deg);
+    }50%{
+        transform: rotate(20deg);
+    }100%{
+        transform: rotate(-20deg);
+    }
+}
+
+main h1{
+    font-size: 70px;
+    font-weight: 100;
+    margin-top: 2%;
+}
+
+@keyframes scale {
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1);
+    }
+}
+
+.btns{
+    display: flex;
+    gap: 10px;
+    margin-top: 2%;
+    position: relative;
+}
+
+button{
+    font-family: 'Englebert', cursive;
+    padding: 5px 20px;
+    color: #134355;
+    background-color:#FAE6E8;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transition: .5s ease all;
+    font-size: 20px;
+}
+
+.btn1{
+    right: 10px;
+    animation: 2s scale linear infinite;
+}
+
+.img2{
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./amibb-cat.gif);
+}
+
+.bgimg{
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #FFFFFF;
+    /* background-image: url(./cat-cats.gif); */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* opacity: 0; */
+    z-index: -1;
+}
+
